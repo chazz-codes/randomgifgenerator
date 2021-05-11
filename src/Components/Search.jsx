@@ -44,11 +44,11 @@ class Search extends Component {
     render() {
         return (
             <div>
+                <div className="frame"><GifImage help={this.state.info} className="gif"/> </div>
                 <form action="" onSubmit={this.handleSubmit}>
                     <input type="text" name="search" value={this.state.userInput} onChange={this.handleChange} placeholder="search by name"/>
-                    <button type="submit"> <h2>Search</h2></button>
+                    <button type="submit"> <h4> Search</h4></button>
                 </form>
-                <GifImage help={this.state.info}/>
                 {/* <GifImage help={this.state.info2}/>
                 <GifImage help={this.state.info3}/> */}
                 <Title title={this.state.title} />
