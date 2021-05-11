@@ -4,7 +4,9 @@ class Title extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.title}</h1>
+                <h1>Random Gif Generator</h1>
+                <h3>by Chazz</h3>
+                <h4>{this.props.title}</h4>
             </div>
         );
     }

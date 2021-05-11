@@ -1,3 +1,6 @@
+
+  @import url("https://use.typekit.net/sia7taz.css");
+
 .App {
   text-align: center;
   background-color:orangered;
@@ -7,22 +10,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: arpona;
+}
+
+header footer{
+  height: 10vh;
+  width: 100vw;
+  background-color: orange;
 }
 
 input{
   border-radius: 25px;
   width: 200px;
-  height: 25px;
+  height: 55px;
   border: none;
+  box-shadow: lightslategray 0 9px;
   
 }
 
 button{
-  border-radius: 25px;
+  border-radius: 30%;
   border: none;
-  height: 35px;
-  justify-self: center;
-  align-self: center;
+  height: 60px;
+  display: inline-block;
+  top: 10%;
+  padding: 15px 20px;
+  box-shadow: lightslategray 0 9px;
+  
+}
+button:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+
+}
+
+button:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px;
 }
 
 .frame{
@@ -34,10 +58,25 @@ button{
   align-items: center;
   justify-content: center;
   background-color: black;
+  border-radius: 10%;
+  border:20px;
 }
 
 .gif{
   position:absolute;
   align-self: center;
   justify-self: center;
+}
+
+form{
+  justify-content: center;
+  align-items: center;
+  display:inline-block;
+  /* background-color: lightskyblue; */
+}
+
+img{
+  max-width: 500px;
+  max-height: 500px;
+  
 }
