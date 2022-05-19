@@ -18,7 +18,7 @@ class Search extends Component {
         event.preventDefault()
         const character = this.state.userInput
        
-        console.log("submitted "+ character)
+    
         const url = `https://api.giphy.com/v1/gifs/search?api_key=kSRfXgwbzEaX6F8BuWaoKoHFN6zcbKaX&q=${character}&limit=25&offset=0&rating=g&lang=en`
 
         try{
@@ -43,15 +43,20 @@ class Search extends Component {
 
     render() {
         return (
-            <div>
+            <div className='search-comp'>
                 <header></header>
                 <div className="frame"><GifImage help={this.state.info} className="gif"/> </div>
                 <form action="" onSubmit={this.handleSubmit}>
-                    <input type="text" name="search" value={this.state.userInput} onChange={this.handleChange} placeholder="search by name"/>
-                    <button type="submit">  Search</button>
+                    <div className="input">
+                        <input type="text" name="search" value={this.state.userInput} onChange={this.handleChange} placeholder="Search by Name"/>
+                        <button type="submit"> 
+                            <h2>
+                                SEARCH
+                            </h2>
+                        </button>
+                    </div>
                 </form>
-                {/* <GifImage help={this.state.info2}/>
-                <GifImage help={this.state.info3}/> */}
+                
                 <Title title={this.state.title} />
                 <footer></footer>
 
