@@ -1,0 +1,138 @@
+
+  @import url("https://use.typekit.net/sia7taz.css");
+
+.App {
+  text-align: center;
+  background-color:orangered;
+  width: 100vw;
+ 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arpona;
+}
+
+header footer{
+  height: 10vh;
+  width: 100vw;
+  background-color: orange;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input{
+  border-radius: 25px;
+  width: 300px;
+  height: 55px;
+  border: none;
+  box-shadow: lightslategray 3px 6px;
+  padding-left: 20px;
+}
+
+button{
+  border-radius: 25px;
+  border: none;
+  box-shadow: lightslategray 3px 6px;
+  text-align: center;
+  width: 150px;
+  height: 55px;
+  font-family: arpona;
+  background-color: black;
+  color: white;
+  
+}
+button:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+
+}
+
+button:active{
+  transform: translateY(4px);
+  box-shadow: 0 5px;
+}
+
+.frame{
+  max-width: 500px;
+  max-height: 500px;
+  min-width: 500px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 10%;
+  border:20px;
+  
+}
+
+.gif{
+  position:absolute;
+  align-self: center;
+  justify-self: center;
+}
+
+form{
+  justify-content: center;
+  align-items: center;
+  display:inline-block;
+  /* background-color: lightskyblue; */
+}
+
+img{
+  max-width: 500px;
+  max-height: 500px;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .frame{
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    border: none;
+    border-radius: 0%;
+    
+  }
+  
+  img {
+    max-width: 280px;
+    max-height: 280px;
+    
+  }
+  button, input {
+    width: 80%;
+  }
+
+  .input {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .title {
+    width: 80%;
+    
+ 
+  }
+  .search-comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .App {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .dynamic {
+    display: none;
+  }
+}
