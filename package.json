@@ -2,7 +2,7 @@
   "name": "randomgif",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chazzsplash.github.io/randomgifgenerator/",
+  "homepage": "https://chazz-codes.github.io/randomgifgenerator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
